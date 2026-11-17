@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://m0ydssd7xkyp"]
+
+[ext_resource type="Script" uid="uid://d13ogdj4tx77n" path="res://scenes/Leaderboard.gd" id="1_0tlxa"]
+
+[node name="Leaderboard" type="Control" unique_id=1817130786]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0tlxa")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1649135900]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.011764706, 0.05882353, 1)
+
+[node name="Title" type="Label" parent="." unique_id=678752709]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 30.0
+offset_right = 1040.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0.09803922, 0.9490196, 1, 1)
+theme_override_font_sizes/font_size = 56
+text = "GLOBAL TOP 10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=942479490]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 130.0
+offset_right = 940.0
+offset_bottom = 162.0
+
+[node name="RankHeader" type="Label" parent="Header" unique_id=1739930756]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "RANK
+"
+
+[node name="NameHeader" type="Label" parent="Header" unique_id=1779056575]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "PLAYER"
+
+[node name="TimeHeader" type="Label" parent="Header" unique_id=55079906]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "TIME"
+
+[node name="Rows" type="VBoxContainer" parent="." unique_id=1003637012]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 170.0
+offset_right = 940.0
+offset_bottom = 550.0
+theme_override_constants/separation = 6
+
+[node name="StatusLabel" type="Label" parent="." unique_id=358642512]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 570.0
+offset_right = 1040.0
+offset_bottom = 610.0
+theme_override_font_sizes/font_size = 24
+text = "Loading..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RefreshButton" type="Button" parent="." unique_id=2116964848]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 630.0
+offset_right = 620.0
+offset_bottom = 686.0
+text = "REFRESH"
+
+[node name="BackButton" type="Button" parent="." unique_id=1812583278]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 630.0
+offset_right = 940.0
+offset_bottom = 686.0
+text = "BACK"
